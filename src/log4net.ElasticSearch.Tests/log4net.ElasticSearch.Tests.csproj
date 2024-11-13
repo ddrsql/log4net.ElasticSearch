@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net45;netcoreapp3.0</TargetFrameworks>
     <RootNamespace>log4net.ElasticSearch.Tests</RootNamespace>
   </PropertyGroup>
 
@@ -13,8 +13,8 @@
     <Reference Include="System.Configuration" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.1" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.5.0" />
   </ItemGroup>
 
   <ItemGroup>
